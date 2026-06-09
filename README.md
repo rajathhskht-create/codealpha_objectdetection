@@ -172,35 +172,3 @@ The SORT (Simple Online and Realtime Tracking) algorithm is implemented **from s
 | `iou()` | Computes Intersection-over-Union between two bounding boxes |
 | `linear_sum_assignment` | Solves the optimal detection-to-track assignment (Hungarian Algorithm) |
 | `id_to_color()` | Generates a unique, deterministic color per track ID |
-
----
-
-## 🚀 Future Improvements
-
-- [ ] Save output video with tracking overlay
-- [ ] Object count per class in HUD
-- [ ] DeepSORT (appearance-based re-identification)
-- [ ] Support for IP camera streams (RTSP)
-- [ ] Web dashboard using Flask/Streamlit
-
----
-
-## 📄 License
-
-This project is open source under the [MIT License](LICENSE).
-
----
-
-## 👤 Author
-
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
-
----
-
-## 🙏 Acknowledgements
-
-- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
-- [SORT: Simple, Online and Realtime Tracking](https://arxiv.org/abs/1602.00763) — Bewley et al., 2016
-- **CodeAlpha** — for the internship opportunity
