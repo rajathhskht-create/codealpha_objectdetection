@@ -4,16 +4,6 @@ A real-time **object detection and tracking** system built with Python — suppo
 
 > 🎓 Built as **Task 4** of my Python internship at **CodeAlpha**
 
----
-
-## 🚀 Demo
-
-> *(Add a screen-recorded GIF or screenshot here after running the app)*
-> 
-> Tip: Record your webcam demo and convert to GIF using [ezgif.com](https://ezgif.com/video-to-gif)
-
----
-
 ## ✨ Features
 
 | Feature | Description |
