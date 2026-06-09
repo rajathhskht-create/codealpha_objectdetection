@@ -22,15 +22,15 @@ Video Frame
     │
     ▼
 ┌─────────────┐     ┌──────────────────────────────┐
-│  Detector   │────▶│  YOLOv8  or  Faster R-CNN    │
+│  Detector   │───▶ │  YOLOv8  or  Faster R-CNN   │
 │  (per frame)│     │  → bounding boxes + scores   │
 └─────────────┘     └──────────────────────────────┘
     │
     ▼ detections (N × 5): [x1, y1, x2, y2, score]
 ┌─────────────────────────────────────────────────┐
-│              SORT Tracker                        │
-│                                                  │
-│  1. Kalman Filter predicts next position         │
+│              SORT Tracker                       │
+│                                                 │
+│  1. Kalman Filter predicts next position        │
 │  2. IoU matrix computed (detections × tracks)   │
 │  3. Hungarian Algorithm assigns best matches    │
 │  4. Unmatched detections → new tracks           │
@@ -73,15 +73,15 @@ bashpip install torch torchvision
 
 4. Run the app
 Webcam (default):
-bashpython src/object_detection.py
+python src/object_detection.py
 Video file:
-bashpython src/object_detection.py --source path/to/video.mp4
+python src/object_detection.py --source path/to/video.mp4
 Use Faster R-CNN instead of YOLO:
-bashpython src/object_detection.py --model fasterrcnn
+python src/object_detection.py --model fasterrcnn
 Custom confidence threshold:
-bashpython src/object_detection.py --conf 0.5
+python src/object_detection.py --conf 0.5
 All options combined:
-bashpython src/object_detection.py --source video.mp4 --model yolo --conf 0.4
+python src/object_detection.py --source video.mp4 --model yolo --conf 0.4
 
 Press Q to quit the window at any time.
 
